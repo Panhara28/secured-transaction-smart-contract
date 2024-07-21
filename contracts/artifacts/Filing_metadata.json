@@ -1,0 +1,438 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fillingFee",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "fillingFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllFilers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAllFilings",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "filingOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "securedInterestType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "partySize",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "contractNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "valueOfLoan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyFullname",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyNationalID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyCountry",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralCategory",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Filing.FilingInfo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getFiling",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "filingOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "securedInterestType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "partySize",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "contractNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "valueOfLoan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyFullname",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyNationalID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyCountry",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralCategory",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Filing.FilingInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getFilingByOwner",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "filingOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "securedInterestType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "partySize",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "contractNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "valueOfLoan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyType",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyFullname",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securingPartyNationalID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "securedPartyCountry",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralCategory",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collateralDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Filing.FilingInfo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_securedInterestType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_partySize",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_contractNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_valueOfLoan",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_securingPartyType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_securingPartyFullname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_securingPartyNationalID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_securedPartyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_securedPartyAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_securedPartyCountry",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_collateralCategory",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_collateralDescription",
+						"type": "string"
+					}
+				],
+				"name": "submitFilingInfo",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Filing.sol": "Filing"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [],
+		"viaIR": true
+	},
+	"sources": {
+		"contracts/Filing.sol": {
+			"keccak256": "0x4d4aee9d6df19881f046f9fa4fc80ec5ffd5575be7c0d06ccc650c2b24364850",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a853429a120f940c9c19539de28b9f6b54b3b1839be4f3b66afb7527eb5f6dbe",
+				"dweb:/ipfs/QmVX2ZMMjvh495zZMpVsnF5CEpttVsDvFZBn27sNw9FYvu"
+			]
+		}
+	},
+	"version": 1
+}
